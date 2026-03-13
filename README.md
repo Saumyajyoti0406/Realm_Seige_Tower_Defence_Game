@@ -1,144 +1,128 @@
 # 🏰 Realm Siege — Strategic Tower Defense
 
-> A fully featured, mobile-first tower defense game built in a **single HTML file** — no frameworks, no dependencies, no build step required.
+> A fully featured, mobile-first tower defense game built in a **single HTML file** — no frameworks, no dependencies, no build step required. Now available as an Android app!
 
-![Game Preview](https://img.shields.io/badge/Platform-Browser%20%7C%20Mobile-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Browser%20%7C%20Android-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Size](https://img.shields.io/badge/Size-Single%20HTML%20File-gold?style=flat-square)
-![No Dependencies](https://img.shields.io/badge/Dependencies-None-brightgreen?style=flat-square)
+![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square)
+![Android](https://img.shields.io/badge/Android-APK%20%7C%20AAB-brightgreen?style=flat-square)
+![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-orange?style=flat-square)
 
 ---
 
 ## 🎮 Play Now
 
-Open `realm-siege-v4.html` in any modern browser — that's it. No installation, no server, no npm.
+🌐 **Browser:** [Play on Netlify](https://saumyajyoti0406.github.io/Realm_Seige_Tower_Defence_Game)
+
+📱 **Android:** Download the APK from the [Releases](../../releases) section and install directly on your device
 
 ---
 
-## 📖 About
+## 🤖 Built with Claude AI
 
-Realm Siege is a rich tower defense game where you defend your realm against waves of increasingly powerful enemies across multiple worlds. Place towers, deploy heroes, unleash powerful abilities, and upgrade your defenses to survive every onslaught.
+This game was designed and built with the help of **[Claude](https://claude.ai)** by Anthropic — an AI assistant that helped:
+- Architect and code the entire game engine from scratch
+- Design the tower, enemy, and progression systems
+- Build the sign-in and per-user save system
+- Convert the game into a fully installable Android PWA
+- Generate the app icon and all supporting assets
 
-The game features a full **commander progression system**, a **persistent account system** with per-user saves, and 32 hand-crafted campaign levels across 4 distinct worlds.
+> *Proof that anyone can build and ship a real game with the right tools — no prior game dev experience needed!*
+
+---
+
+## 📱 Android Installation
+
+### Option 1 — Direct APK Install
+1. Download `Realm Siege.apk` from [Releases](../../releases)
+2. On your Android phone, open the APK file
+3. If prompted, enable **"Install from unknown sources"** in settings
+4. Install and enjoy! 🎮
+
+### Option 2 — Play in Browser (Chrome on Android)
+1. Open the game link in **Chrome**
+2. Tap the banner: **"Add Realm Siege to Home Screen"**
+3. It installs like a real app — works offline too!
 
 ---
 
 ## ✨ Features
 
 ### 🗺️ Campaign
-- **4 unique worlds** — Verdant Forest, Scorched Sands, Lava Fields, and Frozen Peaks
-- **8 levels per world** (32 total), including boss encounters every 4th level
-- Star rating system (1–3 stars) based on lives remaining
-- Progressive difficulty that ramps across worlds and levels
-- **Beginner-friendly** — the first 3 levels feature extra starting gold, bonus lives, and reduced enemy counts to ease new players in
+- **4 unique worlds** — Verdant Forest, Scorched Sands, Lava Fields, Frozen Peaks
+- **8 levels per world** (32 total) including boss encounters every 4th level
+- Star rating system (1–3 ⭐) based on lives remaining at victory
+- **Beginner-friendly** — first 3 levels have extra gold, more lives, and fewer enemies
 
 ### 🏗️ Towers
 | Tower | Unlock | Special |
 |-------|--------|---------|
-| 🏹 Archer | Level 1 | Balanced, high rate of fire |
+| 🏹 Archer | Level 1 | Balanced, rapid fire |
 | 💣 Cannon | Level 2 | AoE splash damage |
 | 🔮 Magic | Level 4 | Ignores enemy armor |
 | ❄️ Frost | Level 6 | Slows enemies |
-| ☠️ Poison | Level 8 | Damage-over-time DoT |
-| ⚡ Tesla | Level 12 | Chain lightning strikes |
+| ☠️ Poison | Level 8 | Damage-over-time |
+| ⚡ Tesla | Level 12 | Chain lightning |
 
-Each tower has a **3-tier upgrade tree** with branching paths at tier 3, giving you meaningful strategic choices (e.g., Archer → Barrage for rapid fire *or* Sniper for armor-piercing).
+Every tower has a **3-tier upgrade tree** with branching paths at tier 3 for meaningful strategic choices.
 
 ### 🧝 Heroes
-Deploy powerful hero units that fight alongside your towers:
-- **Lyra** 🧝 — Root & gold aura (unlocked from the start)
-- **Kael** 🧙 — Fireball AoE specialist
-- **Serafin** 🧊 — Blizzard aura support
+- **Lyra** 🧝 — Root & gold aura
+- **Kael** 🧙 — Fireball AoE
+- **Serafin** 🧊 — Blizzard aura
 
 ### ⚡ Abilities
-Unleash powerful timed abilities to turn the tide of battle:
-- ❄️ **Freeze** — Freeze all enemies for 3 seconds
-- ⚡ **Storm** — Chain lightning hits 10 enemies
-- ☄️ **Meteor** — Massive AoE explosion
-- ⏳ **Time Warp** — Double game speed for 8 seconds
-- 🏹 **Barrage** — Triple archer fire rate for 5 seconds
+| Ability | Effect |
+|---------|--------|
+| ❄️ Freeze | Freeze all enemies for 3s |
+| ⚡ Storm | Chain lightning hits 10 enemies |
+| ☄️ Meteor | Massive AoE explosion |
+| ⏳ Time Warp | Double speed for 8s |
+| 🏹 Barrage | Triple archer fire rate for 5s |
 
 ### 👤 Account System
-- **Register & Sign In** with a username and password
-- Progress (XP, level, completed levels, gems, upgrades) is **saved per user account**
-- **Auto-login** on return visits — jump straight back into your game
-- **Guest mode** available for casual play (no saves)
-- Accounts are stored locally in the browser — no server needed
-
-### 🛒 Shop & Permanent Upgrades
-Spend gems earned from completing levels on permanent passive upgrades:
-- 💹 Merchant Guild — +10% gold per kill
-- 🧱 Wall Fortify — +5 starting lives
-- 🔭 Watchtower — +8% tower range
-- ⚒️ Forge Master — +10% tower damage
-- 🌀 Arcane Focus — -15% ability cooldowns
-- 👑 Royal Treasury — +50 starting gold
+- Register & sign in with a username and password
+- Progress saved **per user account** — XP, levels, gems, upgrades all persist
+- Auto-login on return visits
+- Guest mode available for quick play
 
 ### 🎖️ Commander Progression
-Level up your Commander rank by earning XP in battle to unlock new towers, abilities, and heroes:
+Level up from **Recruit → Mythic** across 12 ranks, unlocking new towers, heroes and abilities as you grow.
 
-| Level | Title | Unlock |
-|-------|-------|--------|
-| 1 | Recruit | Archer, Lyra |
-| 2 | Soldier | Cannon Tower |
-| 3 | Veteran | Freeze Ability |
-| 4 | Knight | Magic Tower |
-| 5 | Captain | Storm Ability |
-| 6 | Commander | Frost Tower |
-| 7 | Warlord | Meteor Ability |
-| 8 | Champion | Poison Tower |
-| 9 | Grand Knight | Kael & Serafin Heroes |
-| 10 | Grand Warlord | Time Warp Ability |
-| 11 | Archon | Barrage Ability |
-| 12 | Mythic | Tesla Tower |
-
-### 👾 Enemy Types
-| Enemy | Trait |
-|-------|-------|
-| 🐀 Scout | Fast, low HP |
-| ⚔️ Warrior | Armored brawler |
-| 👾 Giant | Slow but tanky |
-| 🦅 Harpy | Flying unit |
-| 🧟 Troll | Tough regenerator |
-| 👻 Ghost | Armored flying unit |
-| 🗿 Golem | High armor, massive HP |
-| 🐉 Boss | Unique boss encounter |
-| 👹 Mega Boss | End-game challenge |
+### 👾 Enemies
+Scouts, Warriors, Giants, Harpies, Trolls, Ghosts, Golems, Bosses and Mega Bosses — each with unique HP, speed, armor, and flying properties.
 
 ---
 
 ## 🕹️ How to Play
 
-1. **Register** or sign in (or play as guest)
+1. **Register** or sign in (or play as Guest)
 2. Choose a **World** from the home screen
-3. Select a **Level** to start
-4. **Place towers** on green tiles by selecting a tower from the bottom panel, then tapping a valid cell
-5. Hit **Send ▶** to start each wave
-6. **Upgrade or sell** towers by tapping them during play
-7. Use **Abilities** from the Abilities tab for emergency situations
-8. Survive all waves to **Victory!** 🏆
+3. Select a **Level**
+4. **Place towers** on green tiles by selecting from the bottom panel
+5. Hit **Send ▶** to launch each wave
+6. **Tap a tower** to upgrade or sell it
+7. Use **Abilities** tab for emergency powers
+8. Survive all waves → **Victory!** 🏆
 
-### Tips
-- Place towers at **bends in the path** for maximum coverage
-- **Frost towers** pair well with high-damage towers — slow enemies, then burst them down
-- Save gold between waves to afford key upgrades
-- **Sell underperforming towers** to reinvest gold in better positions
-- Boss waves always appear at levels 4, 8, 12, etc. — prepare ahead
+**Tips:**
+- Place towers at **path bends** for maximum coverage
+- **Frost + high-damage** towers are a killer combo
+- **Sell weak towers** and rebuild in better spots
+- Prepare early — boss waves hit hard at levels 4, 8, 12…
 
 ---
 
-## 🗂️ Project Structure
+## 📦 What's in This Repo
 
 ```
-realm-siege-v4.html   ← The entire game (HTML + CSS + JS, ~1,400 lines)
-README.md             ← This file
+index.html          ← The entire game (HTML + CSS + JS)
+manifest.json       ← PWA manifest (app name, icon, display mode)
+sw.js               ← Service worker (offline support)
+icon-192.png        ← App icon (192×192)
+icon-512.png        ← App icon (512×512)
+README.md           ← This file
 ```
-
-Everything lives in a single self-contained HTML file:
-- **CSS** — Custom design system with CSS variables, animations, and a mobile-first responsive layout
-- **Canvas rendering** — Vanilla Canvas 2D API for all game visuals
-- **Game logic** — Pure vanilla JavaScript, no libraries
-- **Persistence** — localStorage for per-user save data
 
 ---
 
@@ -147,97 +131,63 @@ Everything lives in a single self-contained HTML file:
 | Detail | Info |
 |--------|------|
 | Engine | Vanilla HTML5 Canvas |
-| Language | JavaScript (ES6+) |
+| Language | JavaScript ES6+ |
 | Styling | CSS3 with custom properties |
 | Storage | localStorage (per-user keyed saves) |
-| Font | Google Fonts — Cinzel + Nunito |
+| PWA | manifest.json + Service Worker |
+| Android | APK + AAB via PWABuilder |
+| Font | Google Fonts — Cinzel & Nunito |
 | Dependencies | **None** |
 | Build step | **None** |
-| File count | **1** |
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deploy Your Own Copy
 
-Because the game is a single HTML file, deployment is trivially easy:
-
-### Netlify Drop *(fastest — 30 seconds)*
-1. Go to [netlify.com/drop](https://app.netlify.com/drop)
-2. Drag and drop `realm-siege-v4.html` onto the page
-3. Get an instant public URL
+### Netlify Drop *(easiest)*
+1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
+2. Drag the entire project **folder** onto the page
+3. Get an instant live URL
 
 ### GitHub Pages
-1. Rename the file to `index.html`
-2. Push to a GitHub repository
-3. Go to **Settings → Pages** and set source to the main branch
-4. Your game will be live at `https://yourusername.github.io/realm-siege`
-
-### Vercel
-```bash
-npx vercel --prod
-```
-
-### Self-hosted
-Simply serve the HTML file with any static file server:
-```bash
-# Python
-python -m http.server 8080
-
-# Node.js
-npx serve .
-```
+1. Push all files to a GitHub repo
+2. Go to **Settings → Pages → Deploy from main branch**
+3. Live at `https://yourusername.github.io/repo-name`
 
 ---
 
-## 📱 Mobile Support
+## 📱 Building the Android APK Yourself
 
-Realm Siege is designed mobile-first:
-- Touch input fully supported (tap to place, tap to select)
-- Responsive layout capped at 480px wide, centered on larger screens
-- `user-scalable=no` viewport to prevent accidental zoom during play
-- Hardware-accelerated Canvas rendering
+This project is PWA-ready. To generate your own APK:
 
----
+1. Host the project on any static host (Netlify, GitHub Pages, etc.)
+2. Go to [pwabuilder.com](https://pwabuilder.com)
+3. Paste your hosted URL
+4. Click **Package for Stores → Android**
+5. Download your APK or AAB
 
-## 🔒 Account & Save Data
-
-Player accounts and save data are stored **entirely in the browser's localStorage**. This means:
-- ✅ No server, no database, no sign-up emails
-- ✅ Instant account creation
-- ✅ Works fully offline
-- ⚠️ Progress is tied to the specific browser/device
-- ⚠️ Clearing browser data will erase saves
-
-Passwords are hashed before storage. This is a lightweight local hash — suitable for a game, but **not intended for sensitive data**.
+> **Note:** Keep your `signing.keystore` file safe! You'll need it to publish future updates to the Google Play Store.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Some ideas for extensions:
-- 🌍 Additional worlds and level layouts
-- 🗼 New tower types (e.g., ballista, flame thrower)
-- 🧙 Additional hero units with unique abilities
-- 🏆 Leaderboard / high score system
-- ☁️ Cloud save support via Supabase or Firebase
-- 🌐 Multiplayer co-op mode
+Ideas for future updates:
+- ☁️ Cross-device cloud saves (Supabase / Firebase)
+- 🏆 Global leaderboard
+- 🎵 Sound effects and music
+- 🌍 More worlds and level layouts
+- 🗼 New tower and hero types
+- 📊 Google Play Store listing
 
-To contribute, fork the repo, make your changes to the HTML file, and open a pull request.
+Fork the repo, make your changes, and open a pull request — all welcome!
 
 ---
 
 ## 📄 License
 
-MIT License — free to use, modify, and distribute. See `LICENSE` for details.
+MIT License — free to use, modify, and distribute.
 
 ---
 
-## 🙏 Credits
-
-- Fonts: [Google Fonts](https://fonts.google.com) — Cinzel & Nunito
-- Emoji artwork: System emoji (platform-native)
-- Built with: Pure vanilla HTML, CSS, and JavaScript — no external game engine
-
----
-
-*Made with ❤️ — defend your realm, commander!* ⚔️
+*Built with ❤️ using [Claude AI](https://claude.ai) by Anthropic — proving anyone can ship a real game! ⚔️🏰*
